@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>RM1 Campaign</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="rm1campaign.js" defer></script>
+</head>
+<body>
+    <header>
+        <br>
+        <div><img style="text-align: left;" src="iiumLogo.png" alt="IIUM Logo" id="iiumLogo">
+            <h1>RM1 Campaign</h1>
+        </div>
+    </header>
+    
+    <intro>
+        <img src="poster.png" alt="poster" id="poster">
+        <br>
+        <h2>LET YOUR CONTRIBUTIONS BE PERPERTUAL FOR THE PLEASURE OF ALLAH SWT</h2>
+        <p>مَثَلُ الَّذِيْنَ يُنْفِقُوْنَ اَمْوَالَهُمْ فِيْ سَبِيْلِ اللّٰهِ كَمَثَلِ حَبَّةٍ اَنْۢبَتَتْ سَبْعَ
+            ۞ سَنَابِلَ فِيْ كُلِّ سُنْۢبُلَةٍ مِّائَةُ حَبَّةٍ ۗ وَاللّٰهُ يُضٰعِفُ لِمَنْ يَّشَاۤءُ ۗوَاللّٰهُ وَاسِعٌ عَلِيْمٌ</p> 
+        <p style="font-style: italic;">
+        "The example of those who spend their wealth in the way of Allah is like a seed
+        [of grain] which grows seven spikes; in each spike is a hundred grains. And Allah multiplies
+        [His reward] for whim He wills. And Allah is all-Encompassing and Knowing"</p>
+        <p style="font-weight: lighter;">Al-Baqarh:261</p> 
+    </intro>
+
+    <mainBody>
+        <fieldset>
+            <form id="formDetails">
+            <h2 style="color: #004e98;">PARTICIPATION IN RM1 CAMPAIGN—MONTHLY SALARY DEDUCTION FORM</h2>
+            <h3 style="text-align:left;">Personal Details</h3>
+        
+            <div class="user-details">
+                
+                <div><label class="required">Name :</label><input type="name" name="name" required aria-required="true"></div><br>
+                <div><label class="required">Staff No. :</label><input type="staffNo" name="staffNo" required aria-required="true"></div><br>
+                <div><label class="required">Kulliyahs / Centres / Divisions / Institutes / Offices</label><input type="department" name="department" required aria-required="true"></div><br>
+                <div><label class="required">Contact No. :</label><input type="contactNo" name="contactNo" required aria-required="true"></div><br>
+                <div><label class="required">Email :</label><input type="email" name="email" required aria-required="true"></div><br>
+            
+            <h3 style="text-align:left;">Deduction Details</h3>
+            
+                <div><label class="required">Amount to be Deducted(RM) :</label><input type="amountDeducted" name="amountDeducted" required aria-required="true"></div><br>
+                <div><label class="deduction">
+                    <label for="startDate">Effective Date:</label><input type="date" name="startDate" required aria-required="true"><br><br>
+                    <label for="endDate">End Date:</label><input type="date" id="end" name="endDate" required aria-required="true">
+                </div><br><br>
+                <div class="terms-checkbox">
+                <input type="checkbox" name="termsCheckbox" required aria-required="true"><span>I hereby confirm that all information provided in the enrollment for the RM1 Monthly Deduction Program is accurate and complete.</span>
+                </div>
+            </div>
+
+            <button type="submit" href="/">Submit</button>
+            </form>
+        </fieldset>
+    </mainBody>
+    
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+    
+    <footer>
+        <br>
+        <h2 style="color:#ffffff">CONTACT US</h2>
+   
+        <div>
+            <div class="company-adress"></div>
+            <p class="company-name"></p>
+            <p> IIUM ENDOWNMENT FUND, Level 3,<br>
+                Rectory International Islamic University Malaysia,<br>
+                P.O. Box 10, 50728 Kuala Lumpur.<p></p>
+        </div>
+        <div>
+            <div class="company-contacts"></div>
+            <p>Tel: 03-6196 4268</p>
+            <a href="mailto:ief@iium.edu.my"> ief@iium.edu.my<a>
+            <a href="https://division.iium.edu.my/ief" target="_blank">IIUM Endownment Fund</a>
+            <a href="https://www.facebook.com/iium.endowment/" target="_blank">Facebook</a>
+        </div>         
+
+    </footer>
+</body>
+</html>
