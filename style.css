@@ -1,0 +1,142 @@
+body {
+    font: 0.9em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:#bbcde5;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "intro"
+        "mainBody"
+        "footer"
+    ;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+header {
+    background-color:#1c5d99;
+    color: #ebebeb;
+    width: 100%;
+    height: 130px;
+}
+#iiumLogo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+header #iiumLogo, h1{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+intro {
+    color: #222222;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;;
+    white-space: pre-line;
+}
+intro h2{
+    color: #C6302C;
+    font-weight: bold;
+}
+intro #poster {
+    width: 1100px;
+    height: 500px;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+mainBody {
+    color: #222222;
+}
+mainBody h2{
+    font-weight: bold;
+    text-align:center;
+}
+legend{
+    text-align: center;
+    color: #004e98;
+}
+fieldset {
+    border: 3px solid;
+    margin:110px;
+    border-color: #004e98;
+    background-color:#ebebeb;
+}
+.user-details {
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 4px;
+}
+.user-details label.required::before {
+    content: '*';
+    color: #C6302C;
+    margin-right: 4px;
+}
+.user-details input {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+button {
+    width: 50%;
+    height: 30px;
+    margin: 10px auto; /* Center horizontally */
+    border-radius: 3px;
+    background: #3a6ea5;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ebebeb;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+}
+button:hover {
+    background: #004e98;
+}
+footer {
+    width: 100%;
+    background-color: #051063;
+    text-align:center;
+    color:#ebebeb;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+footer a {
+    color:#ebebeb;
+    font-weight: bold;
+}
+footer a:hover {
+    color:#C6302C;
+    font-weight: bold;
+}
+#scrollToTopBtn {
+    background-color: #3a6ea5;
+    border: none;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+}
+#scrollToTopBtn:hover {
+    background-color: #004e98;
+}
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+
+
